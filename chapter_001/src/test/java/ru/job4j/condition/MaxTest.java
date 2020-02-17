@@ -7,26 +7,20 @@ import static org.junit.Assert.assertThat;
 public class MaxTest {
     @Test
     public void when2MaxThen1() {
-        int left = 3;
-        int right = 5;
-        int result = (right>left) ? right : left;
-        assertThat(result, is (right));
+        int result = Max.max(1,2);
+        assertThat(result, is (2));
     }
 
     @Test
     public void when1MaxThen2() {
-        int left = 5;
-        int right = 3;
-        int result = (right>left) ? right : left;
-        assertThat(result, is (left));
+        int result = Max.max(2,1);
+        assertThat(result, is (2));
     }
 
 
     @Test
     public void when1Equally2() {
-        int left = 5;
-        int right = 5;
-        int result = (right>left) ? right : left;
-        assertThat(result, is (left));
+        int result = Max.max(3,3);
+        assertThat(result, is (3));
     }
 }
