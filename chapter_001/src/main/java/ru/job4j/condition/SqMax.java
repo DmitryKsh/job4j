@@ -3,10 +3,10 @@ package ru.job4j.condition;
 public class SqMax {
     public static int max(int first, int second, int third, int forth) {
         int result = forth;
-        if (first > second) {
-            if (first < third) {        //изменил first > third на first < third
-                if (first > forth) {
-                    result = third;     // @Test max 7
+        if (first < second) {       // MAX84 изменил first > second на first < second
+            if (first < third) {
+                if (first < forth) {    // MAX84 изменил first > forth на first < forth
+                    result = third;    // @Test max84
                 }
             }
         } else if (second < third) {        // изменил second > third на second < third
