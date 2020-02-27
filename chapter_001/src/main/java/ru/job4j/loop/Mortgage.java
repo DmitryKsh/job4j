@@ -7,18 +7,10 @@ public class Mortgage {
         double sum = amount + withPercent;
 
         while ( sum >= 0 ) {
-            if (sum < salary ) {
-                break;
-            }
-            sum -= salary;
-            double balance = ((sum * percent) / 100) + sum;
-            sum -= salary;
+            double balance = sum - salary;
+            double oneYear = balance * percent / 100;
+            sum = oneYear + balance;
             year++;
-        }
-        while (sum < salary) {
-            salary -= sum;
-            year++;
-            break;
         }
         return year;
     }
