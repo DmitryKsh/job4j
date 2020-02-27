@@ -6,6 +6,12 @@ import static org.junit.Assert.assertThat;
 
 public class SqMaxTest {
     @Test
+    public void test () {
+        int result = SqMax.max(1,2,3,4);
+        assertThat(result, is(4));
+    }
+
+    @Test
     public void max7 () {
         int result = SqMax.max(6,4,7,5);
         assertThat(result, is(7));
