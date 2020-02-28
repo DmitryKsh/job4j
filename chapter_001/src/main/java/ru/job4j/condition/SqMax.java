@@ -15,8 +15,8 @@ public class SqMax {
             if (second > forth) {
                 result = second;
             }
-        } else if (forth > second) {
-            result = forth; // изменил на forth
+        } else if (third > forth) { // именил условие и тело цикла
+            result = third;
         }
         return result;
     }
