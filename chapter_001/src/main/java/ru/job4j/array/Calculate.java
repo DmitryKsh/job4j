@@ -1,6 +1,6 @@
 package ru.job4j.array;
 
-public class calculate {
+public class Calculate {
     public static int[] calculate(int bound) {
         int[] rst = new int[bound];
         for ( int index = 0; index < rst.length; index++) {
