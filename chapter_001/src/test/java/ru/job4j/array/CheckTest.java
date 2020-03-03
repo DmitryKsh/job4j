@@ -9,7 +9,7 @@ public class CheckTest {
     public void whenDataMonoByTrueThenTrue() {
         boolean[] input = new boolean[] {true, true, true};
         boolean result = Check.mono(input);
-        assertThat(result,is(true));
+        assertThat(result, is(true));
     }
 
     @Test
