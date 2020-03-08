@@ -23,6 +23,6 @@ public class FindLoopTest {
         int finish = 4;
         int result = FindLoop.indexOf(input, el, start, finish);
         int expect = 3;
-        assertThat(result,is(expect));
+        assertThat(result, is(expect));
     }
 }
