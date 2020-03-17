@@ -37,7 +37,7 @@ public class MatrixCheckTest {
         };
         char[] result = MatrixCheck.extractDiagonal(input);
         char[] expect = {'X', 'X', 'X'};
-        assertThat(result, is(expect));
+        assertThat(result,is(expect));
     }
 
     @Test
